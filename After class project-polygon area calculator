@@ -2,7 +2,7 @@ import math
 
 class polygon:
     def area(self):
-        raise NotImplementedError("Hi")
+        raise NotImplementedError()
 
 class square(polygon):
     def __init__(self, side_length):
@@ -27,8 +27,8 @@ class circle(polygon):
         return math.pi * self.radius ** 2
     
 ob1=square(4)
-ob1.area()
+print(ob1.area())
 ob2=triangle(4, 3)
-ob2.area()
+print(ob2.area())
 ob3=circle(7)
-ob3.area()
+print(ob3.area())
